@@ -47,7 +47,7 @@ Notations:
 (1)Receding Control Framework
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="figures/1_online-controler.png" width="500" height="300"/>
+          <img src="figures/1_online-controler.png" width="600" height="350"/>
      </div>
 </div>
 

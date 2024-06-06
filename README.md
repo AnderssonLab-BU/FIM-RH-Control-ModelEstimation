@@ -47,14 +47,14 @@ Notations:
 (1)Receding Control Framework
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="figures/1_online-controler.png" width="400" height="300"/>
+          <img src="figures/1_online-controler.png" width="500" height="300"/>
      </div>
 </div>
 
 (2)Trajectory of agent from simulation result <br />
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="figures/2_DP_simulation.png" width="400" height="300"/>
+          <img src="figures/2_DP_simulation.png" width="500" height="500"/>
      </div>
 </div>
 

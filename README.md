@@ -42,7 +42,8 @@ Notations:
 (1) Main_RH_DP_Signal_Model_Estimation_online_control is for testing the proposed algorithm. <br />
 (2) Main_Comparison_Signal_Model_Estimation_online_control is for the comparison of several baseline and our algorithm.
 
-4. Figures from paper
+
+4.Figures from paper and experiment. <br />
 (1)Receding Control Framework
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
@@ -50,7 +51,7 @@ Notations:
      </div>
 </div>
 
-(2)Trajectory of agent from simulation result
+(2)Trajectory of agent from simulation result <br />
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
           <img src="figures/2_DP_simulation.png" width="400" height="300"/>

@@ -41,3 +41,19 @@ Notations:
 3.To run the code, choose the scenario you like and then open the corresponding "Main..." file on MatLab. <br />
 (1) Main_RH_DP_Signal_Model_Estimation_online_control is for testing the proposed algorithm. <br />
 (2) Main_Comparison_Signal_Model_Estimation_online_control is for the comparison of several baseline and our algorithm.
+
+4. Figures from paper
+(1)Receding Control Framework
+<div style="display:flex">
+     <div style="flex:1;padding-right:10px;">
+          <img src="figures/1_online-controler.png" width="400" height="300"/>
+     </div>
+</div>
+
+(2)Trajectory of agent from simulation result
+<div style="display:flex">
+     <div style="flex:1;padding-right:10px;">
+          <img src="figures/2_DP_simulation.png" width="400" height="300"/>
+     </div>
+</div>
+

@@ -54,7 +54,7 @@ Notations:
 (2)Trajectory of agent from simulation result <br />
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="figures/2_DP_simulation.png" width="500" height="500"/>
+          <img src="figures/2_DP_simulation.png" width="600" height="500"/>
      </div>
 </div>
 

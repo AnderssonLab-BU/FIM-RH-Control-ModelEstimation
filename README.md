@@ -38,4 +38,6 @@ Notations:
 
 2.Before running the code, there are several toolboxes needed. Please follow the instruction on command window to install them.
 
-3.To run the code, choose the scenario you like and then open the corresponding "Main..." file on MatLab. (1) Main_RH_DP_Signal_Model_Estimation_online_control is for testing the proposed algorithm. (2) Main_Comparison_Signal_Model_Estimation_online_control is for the comparison of several baseline and our algorithm.
+3.To run the code, choose the scenario you like and then open the corresponding "Main..." file on MatLab. 
+(1) Main_RH_DP_Signal_Model_Estimation_online_control is for testing the proposed algorithm. 
+(2) Main_Comparison_Signal_Model_Estimation_online_control is for the comparison of several baseline and our algorithm.

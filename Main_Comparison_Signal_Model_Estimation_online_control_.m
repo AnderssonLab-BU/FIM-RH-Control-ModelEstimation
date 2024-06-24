@@ -46,11 +46,9 @@ MSE_matrix=[];
 
 
 
-x_initial_position = 10*[10 -10 5];      
+% Define the real parameters and sensor positions   
 gamma = 5;
-gamma_hat = 7;
 K = -20;
-K_hat = -10;
 real_gamma = [gamma gamma+1 gamma-1 gamma+2 gamma-2];
 real_K = [K+5 K K-5  K+3  K-3];
 x_D = 10*[ 7.0   1.0   0.5;
@@ -60,16 +58,20 @@ x_D = 10*[ 7.0   1.0   0.5;
           -2.0   8.0   0.0];
 real_parameters = struct('gamma',real_gamma,'K', real_K,'x_D', x_D);
 
-% estimated parameters 
+
+% Define estimated parameters 
+gamma_hat = 7;
+K_hat = -10;
 hat_gamma = [gamma_hat gamma_hat gamma_hat gamma_hat gamma_hat]; 
 hat_K  =  [K_hat K_hat K_hat K_hat K_hat];
 x_D_hat  = zeros(5,3);
-
 parameters_hat = struct('gamma',hat_gamma,'K', hat_K,'x_D', x_D_hat);
+
 
 
 %%
 %sampling points information
+x_initial_position = 10*[10 -10 5]; 
 x_history = [x_initial_position];
 y_history = [];
 u_list = [];
@@ -110,6 +112,7 @@ for i  = 1:num_step
     x_history = [x_history; x_current_position]; 
     y_history = [y_history; y_current_observation_list];
         
+
     % Running estimator
     if count_estimation == estimation_pause_num
         parameters_hat = get_estimation_Multi_y_list(x_history,y_history,parameters_hat,i);
@@ -118,6 +121,7 @@ for i  = 1:num_step
     count_estimation = count_estimation + 1;
     parameters_hat_list = [parameters_hat_list; parameters_hat];
    
+
     % Update FIM Record  
     trace_list=[];
     for k=1:n_sensor
@@ -130,7 +134,6 @@ for i  = 1:num_step
     MSE_list = [MSE_list MSE_elem];  
 end
 
-MSE_matrix =[MSE_matrix; MSE_list];
 fprintf('\n Final MSE bound is %f', MSE_list(end));
 
 toc
